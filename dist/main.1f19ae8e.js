@@ -11063,7 +11063,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   (0, _jquery.default)('#app2 #nav li').eq($index).addClass('active').siblings().removeClass('active');
 });
 (0, _jquery.default)('#app2 #nav li').eq(0).trigger('click');
-},{"./app2.css":"app2.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"main.js":[function(require,module,exports) {
+},{"./app2.css":"app2.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app3.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../../Program Files/nodejs/node_global/node_modules/parcel/src/builtins/css-loader.js"}],"app3.js":[function(require,module,exports) {
+"use strict";
+
+require("./app3.css");
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery.default)('#app3 .square').on('click', function () {
+  (0, _jquery.default)('#app3 .square').toggleClass('active');
+});
+},{"./app3.css":"app3.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"main.js":[function(require,module,exports) {
 "use strict";
 
 require("./reset.css");
@@ -11073,7 +11090,9 @@ require("./global.css");
 require("./app1.js");
 
 require("./app2.js");
-},{"./reset.css":"reset.css","./global.css":"global.css","./app1.js":"app1.js","./app2.js":"app2.js"}],"../../../../../Program Files/nodejs/node_global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+require("./app3.js");
+},{"./reset.css":"reset.css","./global.css":"global.css","./app1.js":"app1.js","./app2.js":"app2.js","./app3.js":"app3.js"}],"../../../../../Program Files/nodejs/node_global/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
