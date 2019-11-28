@@ -1,0 +1,23 @@
+#app2 #nav{
+    display: flex;
+}
+
+#app2 #nav li{
+    width: 50%;
+    height: 40px;
+    border:1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+}
+
+#app2 .box{
+    display: none;
+}
+
+#app2 li.active{
+    background-color: pink;
+ }
+
+#app2 .box.active{
+   display: block; 
+}

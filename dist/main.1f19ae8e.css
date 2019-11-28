@@ -1,0 +1,58 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+*::after,*::before{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+ul,li{
+    list-style: none;
+}
+#page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page section{
+    width: 50%;
+    height: 50vh;
+    border:1px solid #ccc;
+}
+#app1{
+    padding:20px;
+}
+
+#app1 button{
+    width: 30px;
+    height: 30px;
+}
+#app2 #nav{
+    display: flex;
+}
+
+#app2 #nav li{
+    width: 50%;
+    height: 40px;
+    border:1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+}
+
+#app2 .box{
+    display: none;
+}
+
+#app2 li.active{
+    background-color: pink;
+ }
+
+#app2 .box.active{
+   display: block; 
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
